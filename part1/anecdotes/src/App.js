@@ -22,6 +22,7 @@ const App = () => {
   const [points, setPoints] = useState(Array(8).fill(0))
 
   const getRandomAnecdote = () => setSelected(randomInteger(0,anecdotes.length))
+  
   const addVote = () => {
     const copy = [...points]
     copy[selected] += 1

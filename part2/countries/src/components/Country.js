@@ -7,4 +7,4 @@ const Country = ({ country, getCountryInfo }) => {
     )
   }
   
-  export default Country
+export default Country
