@@ -65,7 +65,11 @@ const App = () => {
           setTimeout(() => {
             setMessage(null)
           }, 4000)
-      })
+        })
+        .catch(error => {
+          setMessage(error.response.data.error)
+          console.log(error.response.data.error)
+        }, 4000)
     }
     else {
 
@@ -84,6 +88,10 @@ const App = () => {
               setMessage(null)
             }, 4000)
           })
+          .catch(error => {
+            setMessage(error.response.data.error)
+            console.log(error.response.data.error)
+          }, 4000)
       }
     }
     setNewName('')
