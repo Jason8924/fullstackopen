@@ -54,7 +54,7 @@ describe('most blogs', () => {
 		}
 	]
 
-  test('of empty list is null', () => {
+	test('of empty list is null', () => {
 		const result = listHelper.favoriteBlog(listWithZeroBlog)
 		expect(result).toEqual(null)
 	})
